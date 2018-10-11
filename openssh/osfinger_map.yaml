@@ -1,0 +1,4 @@
+---
+CentOS-6:
+  openssh:
+    sshd_host_keys: ['ecdsa', 'dsa', 'rsa']
