@@ -1,3 +1,4 @@
+---
 openssh:
   sshd_enable: True
   sshd_binary: /usr/sbin/sshd
@@ -6,6 +7,7 @@ openssh:
   sshd_config_user: root
   sshd_config_group: root
   sshd_config_mode: '644'
+  sshd_host_keys: ['ecdsa', 'dsa', 'rsa', 'ed25519']
   ssh_config: /etc/ssh/ssh_config
   ssh_config_src: salt://openssh/files/ssh_config
   ssh_config_user: root
